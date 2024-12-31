@@ -104,10 +104,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <div class="col-md-4" style="margin-left: 95px;"> 
                         <div class="card text-bg-light text-center" style="max-width: 20rem;">
                             <div class="card-body">
-                            <?php
-                            $username = "admin";
-                            $password = "12345";
-                            ?>               
+                              <div class="text-center mb-3">
+                                  <i class="bi bi-person-circle h1 display-4"></i>
+                                  <p>Welcome to My Daily Journal</p>
+                                  <hr />
+                                </div>
+
                               <form method="post">
                                   <div class="mb-3">
                                       <label for="username" class="form-label">Username:</label>
