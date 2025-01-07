@@ -9,19 +9,27 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php
+                <?php
                     include "koneksi.php";
-                    
-                    $hlm = (isset($_POST['hlm'])) ? $_POST['hlm'] : 1;
+
+                    $hlm = (isset($_POST['hlm']) && $_POST['hlm'] > 0) ? $_POST['hlm'] : 1;
                     $limit = 3;
                     $limit_start = ($hlm - 1) * $limit;
+
+                    if ($limit_start < 0) {
+                        $limit_start = 0;
+                    }
+
                     $no = $limit_start + 1;
 
                     $sql = "SELECT * FROM article ORDER BY tanggal DESC LIMIT $limit_start, $limit";
                     $hasil = $conn->query($sql);
 
                     while ($row = $hasil->fetch_assoc()) {
-                    ?>
+                        // isi tabel
+                    
+                ?>
+
                         <tr>
                             <td><?= $no++ ?></td>
                             <td>
