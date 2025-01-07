@@ -68,16 +68,6 @@ $(document).ready(function(){
 include "upload_foto.php";
 include "koneksi.php";
 
-
-// Pastikan hanya admin yang dapat mengakses
-if(!isset($_SESSION['username']) || $_SESSION['username'] !== 'admin'){
-    echo "<script>
-        alert('Akses ditolak');
-        document.location='login.php';
-    </script>";
-    exit;
-}
-
 // Jika tombol simpan diklik
 if (isset($_POST['simpan'])) {
     $username = $_POST['username'];
