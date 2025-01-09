@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 07, 2025 at 05:49 PM
+-- Generation Time: Jan 07, 2025 at 08:16 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -46,7 +46,7 @@ INSERT INTO `article` (`id`, `judul`, `isi`, `gambar`, `tanggal`, `username`) VA
 (3, 'Ospek', 'Foto bersama setelah melakukan tugas ospek menggambar pohon mind mapping di kelas.', '20250107202452.jpeg', '2025-01-07 20:24:52', 'admin'),
 (4, 'Pantai Marina', 'Pantai Marina\r\nSaya mengunjungi Pantai Marina untuk melakukan pengecekan tempat wawancara mengenai umkm untuk tugas matakuliah.', '20250107202438.jpeg', '2025-01-07 20:24:38', 'admin'),
 (5, 'Jalan-jalan setelah Ulangan akhir Semester', 'Acara sekolah untuk merayakan uas terakhir angakatan tertua di sekolah, kami bermain berbagai macam permainan bersama hingga sore hari.', '20250107202445.jpeg', '2025-01-07 20:24:45', 'admin'),
-(6, 'Kucing Gunung', 'Kucing yang mendatangi tenda kamping ketika camping di ungaran', '20250107210712.jpeg', '2025-01-07 22:01:11', 'admin');
+(6, 'Kucing Gunung', 'Kucing yang mendatangi tenda kamping ketika camping di ungaran', '20250107235833.jpeg', '2025-01-07 23:58:33', 'admin');
 
 -- --------------------------------------------------------
 
@@ -65,12 +65,12 @@ CREATE TABLE `gallery` (
 --
 
 INSERT INTO `gallery` (`id`, `gambar`, `tanggal`) VALUES
-(13, '20250107205712.jpeg', '2025-01-07 13:57:12'),
 (14, '20250107210556.jpeg', '2025-01-07 14:05:56'),
-(15, '20250107210601.jpeg', '2025-01-07 14:06:01'),
-(16, '20250107210613.jpeg', '2025-01-07 14:06:13'),
-(17, '20250107210623.jpeg', '2025-01-07 14:06:23'),
-(18, '20250107210630.jpeg', '2025-01-07 14:06:30');
+(19, '20250107235848.jpeg', '2025-01-07 16:58:48'),
+(20, '20250108002727.jpeg', '2025-01-07 17:27:27'),
+(21, '20250108004327.jpeg', '2025-01-07 17:43:27'),
+(22, '20250108004753.jpeg', '2025-01-07 17:47:53'),
+(24, '20250108011502.jpeg', '2025-01-07 18:15:02');
 
 -- --------------------------------------------------------
 
@@ -90,11 +90,12 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `foto`) VALUES
-(12, 'admin', '827ccb0eea8a706c4c34a16891f84e7b', ''),
-(13, 'Abyan', '$2y$10$HkfTAl68fTwWberk/vPOveLeBH9FiamvzY1KZDBES1np05SwbzORm', '20250107234048.jpg'),
-(14, 'admin2', '$2y$10$cENFz4CX0IWinAPV1sYjfObAsrbCfSBPY10x9yLax.juPxNF9HVha', '20250107234102.jpeg'),
-(15, 'admin4', '$2y$10$fR5HLz6CCHSJLSEOQ10i5.UmQsMBYVaN3jm7POfEGUE1bqYjXgk2a', '20250107234242.jpg'),
-(16, 'admin6', '$2y$10$7Sg1L6M6K9ySOgBn4FTxkOsGAQeixr8X0uiX7jgI4mDS/C9bfZI3C', '20250107234312.jpeg');
+(12, 'admin', '$2y$10$IKenmW2OLq/6p7Eye2QYy.kiBpF3qBlPq6xARSm7HCDGoHAk6A3jG', '20250108005945.jpeg'),
+(14, 'admin2', '$2y$10$cENFz4CX0IWinAPV1sYjfObAsrbCfSBPY10x9yLax.juPxNF9HVha', '20250108005456.jpeg'),
+(15, 'admin4', '$2y$10$PlHO9p16AL8a7YU9tmiEdefszmjs/sU3qoIjH4naCRUDU4PoM2oqe', '20250107235916.jpeg'),
+(16, 'admin6', '$2y$10$hpuXKgdV1la/Wb7AbvAFhe/Va/ZAro6npTdcBsHyEszY3zPgNE9rK', '20250107235910.jpg'),
+(17, 'Abyan', '$2y$10$O4i5frGi94PIqGq2LHwtieNUY4Yjovw.R38ZBpJ4OyRRJoblcT5lq', '20250108005517.jpeg'),
+(18, 'danny', '$2y$10$2g5MDrdBUpW6dVWj63j/seG6hEU2yDQlFocjkQj59yd2xJ3JjXvDC', '20250108010123.jpeg');
 
 --
 -- Indexes for dumped tables
@@ -132,13 +133,13 @@ ALTER TABLE `article`
 -- AUTO_INCREMENT for table `gallery`
 --
 ALTER TABLE `gallery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
